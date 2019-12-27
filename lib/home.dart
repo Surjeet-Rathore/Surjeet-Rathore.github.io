@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:surjeetrathore/const.dart';
 
-
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -23,6 +22,7 @@ class _HomeState extends State<Home> {
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              
               children: <Widget>[
                 Text(
                   'CONTACT',
@@ -59,9 +59,12 @@ class _HomeState extends State<Home> {
                     SizedBox(
                       width: 5,
                     ),
-                    Text(
-                      'surjeetrathore1991@gmail.com',
-                      style: TextStyle(color: Colors.black, fontSize: 12),
+                    Flexible(
+                      child: Text(
+                        'surjeetrathore1991@gmail.com',
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(color: Colors.black, fontSize: 12),
+                      ),
                     ),
                   ],
                 )

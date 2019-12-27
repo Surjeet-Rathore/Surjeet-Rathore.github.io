@@ -6,11 +6,11 @@ import 'package:surjeetrathore/home.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Surjeet Rathore',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
           primaryColor: themeColor, scaffoldBackgroundColor: Colors.white,
           fontFamily: 'Ubuntu'
